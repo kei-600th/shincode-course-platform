@@ -19,7 +19,7 @@ npm run lint       # Run ESLint for code quality checks
 
 ### Tech Stack
 
-- **フロントエンド**: Next.js 15.4.3 (App Router), React 19.1.0, TypeScript
+- **フロントエンド**: Next.js 16.1.6 (App Router), React 19.2.3, TypeScript
 - **スタイリング**: Tailwind CSS v4
 - **データベース**: Supabase (PostgreSQL)
 - **認証**: Supabase Auth (Google OAuth)
@@ -29,26 +29,26 @@ npm run lint       # Run ESLint for code quality checks
 ### Directory Structure
 
 ```
-src/
-└── app/                # Next.js App Router pages
-    ├── layout.tsx      # Root layout with fonts and metadata
-    ├── page.tsx        # Home page component
-    └── globals.css     # Global styles with Tailwind directives
+app/                    # Next.js App Router pages
+├── layout.tsx          # Root layout with fonts and metadata
+├── page.tsx            # Home page component
+├── favicon.ico         # Favicon
+└── globals.css         # Global styles with Tailwind directives
 ```
 
 ### Key Configuration
 
-- **TypeScript**: Path alias `@/*` maps to `./src/*`
+- **TypeScript**: Path alias `@/*` maps to `./*` (project root)
 - **ESLint**: Configured with Next.js recommended rules using flat config format
-- **Development**: Uses Turbopack for faster development builds
+- **Development**: Next.js 16 uses Turbopack by default
 
 ## Development Workflow
 
 When developing new features:
 
-1. Place all new pages in `src/app/` following Next.js App Router conventions
-2. Create reusable components in `src/components/` (create directory if needed)
-3. Use the `@/` import alias for cleaner imports from the src directory
+1. Place all new pages in `app/` following Next.js App Router conventions
+2. Create reusable components in `components/` (create directory if needed)
+3. Use the `@/` import alias for cleaner imports from the project root
 4. Follow the existing TypeScript strict mode configuration
 
 ## Important Notes
