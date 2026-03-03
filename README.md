@@ -1,3 +1,8 @@
+# What's this?
+
+udemy動画教材におけるチュートリアル学習用の履歴です
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
